@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap')
+$Lato: 'Lato', sans-serif
+$Open: 'Open Sans', sans-serif
+
+* 
+ box-sizing: border-box
+ margin: 0 
+
+body
+ font-family: $Open
+
+.container 
+ margin: 0 auto 
+ max-width: 1110px
+ padding: 0 15px 
+
+.ccontainer
+ max-width: 750px
+ margin: 0 auto 
+ padding: 0 15px 
+
+
+
+
+
+
+
+
+.first
+ height: 100vh
+ mix-blend-mode: darken
+ background: #000
+ color: #fff
+
+.header 
+ padding-top: 57px	
+ &-inner 
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &-logo  
+  &-text 
+   font-size: 24px
+   font-family: $Lato 
+   font-weight: bold
+   text-transform: uppercase
+   cursor: pointer
+ &-nav 
+  & img
+   display: none
+  &-text 
+   text-transform: uppercase
+   text-decoration: none
+   color: #fff
+   font-size: 14px
+   font-weight: bold
+   font-family: $Lato
+   margin-right: 20px
+   padding-bottom: 10px
+   transition: border-bottom .1s linear
+   &:last-child
+    margin-right: 0
+   &:hover
+    border-bottom: 3px solid #fcac45
+
+
+
+
+
+
+
+.intro
+ font-family: $Open 
+ &-inner 
+  display: flex
+  justify-content: center
+  align-items: flex-end
+  flex-wrap: wrap
+  height: 89vh
+ &-titles
+  text-align: center
+  margin-bottom: 80px
+ &-title
+  font-size: 44px
+  font-weight: lighter
+  letter-spacing: -2.2px
+  color: #999
+  text-transform: uppercase
+  margin-bottom: 20px
+  & span
+   font-weight: bold
+   color: #fcac45
+ &-sup
+  font-size: 20px
+  font-weight: normal
+  letter-spacing: -1px
+  & span
+   font-weight: bold        
+ &-icon
+  width: 100%
+  text-align: center
+  margin-bottom: 20px
+  &-img 
+   padding: 20px
+   border: 2px solid #fff
+   border-radius: 50%
+   cursor: pointer
+
+
+
+
+
+
+
+.about
+ font-family: $Open	
+ &-inner
+  display: flex 
+ &-left
+  margin: 100px 0
+  margin-right: 170px
+ &-right
+  margin-top: 100px
+ &-sup
+  font-size: 20px
+  color: #636363
+  text-transform: uppercase
+  font-weight: normal
+ &-title
+  font-size: 34px
+  color: #222
+  font-weight: normal
+  letter-spacing: -0.68px
+  text-transform: uppercase
+  & span
+   font-weight: bold
+  &:after 
+   content: ''
+   position: absolute
+   width: 100px
+   height: 5px
+   background: #fcac45
+   margin-top: 20px
+   margin-bottom: 30px
+   display: block
+ &-disc 
+  margin-top: 50px
+  margin-bottom: 35px
+  font-size: 18px
+  line-height: 25px
+  color: #6c6c6c       
+  letter-spacing: -0.72px
+ &-ul 
+  padding: 0
+  & li 
+   list-style-image: url(../img/marker.svg)
+   margin-left: 20px
+   font-size: 16px
+   font-style: italic
+   color: #5a5a5a
+   letter-spacing: -0.16px
+   & span 
+    font-weight: 600
+    font-size: 18px
+    letter-spacing: -0.18px
+    font-style: normal 
+ &-btns
+  margin-top: 50px
+  display: flex
+  & p 
+   cursor: pointer
+   padding: 10px 20px
+   border: 1px solid rgba(0, 0, 0, 0.5) 
+ &-btn 
+  text-decoration: none
+  text-transform: uppercase
+  color: #616161
+  font-size: 12px
+  font-weight: 600
+  letter-spacing: 0.3px
+  margin-left: 5px
+
+
+
+
+
+
+
+.team
+ font-family: $Open
+ color: #fff
+ background: #000
+ &-inner
+  padding: 100px 0
+ &-titles
+  text-align: center 
+ &-title
+  font-weight: 600
+  font-size: 44px
+  text-transform: uppercase
+  position: relative
+  & span 
+   font-weight: 1
+   &:after
+    content: ''
+    position: absolute
+    width: 100px
+    height: 5px
+    background: #fcac45
+    top: 90%
+    right: 45.7%
+    margin-top: 20px
+  &:after 
+   content: ''
+   position: absolute
+   background: #fcac45
+   width: 70px
+   height: 5px
+   top: 100%
+   right: 47%
+   margin-top: 30px
+   opacity: .5
+ &-mans 
+  margin-top: 140px
+  display: flex
+  justify-content: space-between
+ &-man
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  margin-right: 40px
+  &:last-child
+   margin-right: 0
+  & h1 
+   font-weight: bold
+   font-size: 20px
+   margin-top: 20px
+  & h2 
+   font-weight: normal
+   font-size: 16px
+   margin-bottom: 25px 
+ &-img 
+  width: 130px
+  height: 130px
+  background: #eeeef0
+  border-radius: 50% 
+ &-disc 
+  font-size: 14px
+  line-height: 24px
+ &-squares 
+  display: flex
+  justify-content: center
+  margin-top: 75px
+  & div 
+   width: 10px
+   height: 10px
+   background: #fff
+   margin-right: 15px
+   cursor: pointer
+   transition: background-color .1s linear 
+   &:hover 
+    background-color: #fcac45
+   &:last-child
+    margin-right: 0   
+
+
+
+
+
+
+.services
+ color: #222
+ padding: 100px 0
+ font-family: $Open
+ &-feats 
+  margin-top: 100px
+  & h1 
+   text-transform: uppercase
+   margin-bottom: 15px
+  & p 
+   line-height: 21px
+   font-size: 14px 
+ &-disc 
+  color: #6c6c6c
+  font-style: italic
+  font-size: 16px
+  text-align: center
+  margin-top: 90px
+  line-height: 24px
+ 
+
+
+
+
+
+.clients
+ display: flex
+ margin-top: 150px
+ justify-content: space-around
+
+
+
+
+
+
+.music
+ font-family: $Open
+ padding: 100px 0
+ &-filters 
+  display: flex
+  justify-content: space-between
+  margin-top: 115px
+  &-title 
+   font-size: 18px
+   text-transform: uppercase
+   color: #222
+   font-weight: 600
+ &-filter
+  & a 
+   font-size: 18px
+   color: #6c6c6c
+   text-decoration: none
+   border-right: 1px solid #6c6c6c
+   padding: 0 15px
+   transition: all .1s linear
+   &:last-child
+    border-right: none
+    padding-right: 0
+    padding-left: 15px
+   &:first:child
+    padding-left: 0
+    padding-right: 15px
+   &:hover 
+    color: #222
+    font-weight: 600 
+ &-works
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: space-between
+  margin-top: 50px
+  color: #fff
+  & div 
+   width: 23%
+   height: 240px
+   margin-bottom: 30px
+   text-align: center
+   transition: all .1s linear
+   &:nth-child(9),
+   &:nth-child(10),
+   &:nth-child(11),
+   &:nth-child(12)
+    margin-bottom: 0
+   &:hover
+    background: #222
+    h1 
+     display: block
+    h2 
+     display: block
+    img 
+     display: inline-block 
+   & h1 
+    font-weight: 600
+    font-size: 20px
+    text-transform: uppercase
+    margin-top: 65px
+    margin-bottom: 5px
+    display: none 
+   & h2 
+    font-weight: 600
+    font-size: 14px
+    color: #b2b2b2
+    margin-bottom: 30px 
+    display: none
+   & img 
+    cursor: pointer 
+    display: none
+  &-red 
+   background: url(../img/redman.jpg) 
+  &-skelet
+   background: url(../img/skelet.jpg)
+  &-telephone  
+   background: url(../img/redtelephone.jpg)  
+
+
+
+
+
+
+
+.test-disc
+ margin-top: 150px
+ margin-bottom: 50px
+ font-size: 18px
+ color: #e7e7e7
+ font-weight: 600
+ text-transform: uppercase
+.test-sup
+ font-size: 18px
+ color: #b2b2b2
+ font-weight: lighter
+ & span 
+  font-weight: 600
+
+
+
+
+
+
+
+.contact 
+ padding: 100px 0
+ padding-bottom: 150px
+.forms
+ margin-top: 95px	
+ &-upper 
+  display: flex
+.name, .email 
+ width: 100%
+ margin-right: 30px
+.email 
+ margin-right: 0 
+.name h1, .email h1 
+ font-size: 14px
+ color: #636363
+ font-weight: normal
+ & span 
+  color: #db0000 
+.name input, .email input
+ width: 100%
+ height: 40px
+ outline: none
+.forms-downer 
+ margin-top: 30px	
+ & h1 
+  font-size: 14px
+  color: #636363
+  font-weight: normal 
+ & span 
+  color: #db0000 
+ & textarea
+  width: 100%
+  height: 160px
+  outline: none
+  resize: none
+.contact-btn
+ width: 160px
+ height: 40px
+ margin-top: 30px
+ font-size: 16px
+ color: #fff
+ font-weight: 600
+ font-family: $Open
+ background: #fcac45
+ border: none
+ float: right 
+ outline: none
+ margin-bottom: 0
+
+
+
+
+.footer
+ height: 90px
+ background-color: #222	
+ &-inner
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 90px
+ &-left 
+  & h1
+   font-weight: normal
+   text-transform: uppercase
+   font-size: 12px
+   letter-spacing: 0.3px
+   color: #b2b2b2
+   & span 
+    font-weight: bold 
+ &-right 
+  &-imgs 
+   & img 
+    margin-right: 10px
+    cursor: pointer
+    &:last-child
+     margin-right: 0   
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px)
+ .about-inner
+  flex-wrap: wrap 
+ .about-left
+  width: 100%
+  text-align: center
+  margin: 0
+  margin-bottom: 50px
+  margin-top: 50px
+ .about-right 
+  width: 100%
+  margin-top: 50px
+  margin-left: 50px
+  margin-bottom: 50px
+
+
+ 
+ .clients
+  flex-wrap: wrap
+  margin-top: 100px
+ .client
+  width: 100%
+  text-align: center 
+  margin-top: 50px
+
+@media (max-width: 870px)
+
+ .team-mans
+  flex-wrap: wrap
+ .team-man 
+  width: 100%
+  margin-right: 0
+  margin-bottom: 70px
+
+ 
+
+ .music-works div 
+  width: 30%  
+
+
+
+@media (max-width: 700px)
+ .header-nav-text
+  line-height: 30px
+ .header-logo-text
+  margin-right: 60px
+ .intro-icon-img
+  margin-bottom: 30px
+ .header 
+  padding-top: 30px 
+
+
+ .intro-titles
+  margin-top: 50px
+ .intro-title
+  font-size: 40px
+ .intro-sup
+  font-size: 17px
+
+
+ .music-filters 
+  flex-wrap: wrap
+  &-title
+   width: 100%
+   margin-bottom: 20px
+  & a:first-child
+   padding-left: 0
+
+ .music-works div 
+  width: 48%
+  &:nth-child(9),
+  &:nth-child(10),
+  &:nth-child(11),
+  &:nth-child(12)
+   margin-bottom: 30px
+
+
+
+@media  (max-width: 520px)
+ .about-left img
+  width: 300px
+  height: 250px
+  text-align: center
+ .about-right
+  margin-top: 0
+  margin-left: 0
+
+ .team-title 
+  &:after 
+   right: 43.8%
+  & span 
+   &:after
+    right: 41% 
+
+
+
+ .music-works
+  justify-content: center
+  & div 
+   width: 100%
+   background-repeat: no-repeat
+   background-position: center
+   text-align: center 
+
+ .music
+  padding-bottom: 50px  
+
+
+ .contact
+  padding-top: 50px
+ .forms-upper 
+  flex-wrap: wrap
+ .email, .name 
+  width: 100%
+  margin-right: 0
+ .name
+  margin-bottom: 30px
+ .contact-btn
+  margin-bottom: 50px 
+
+
+ 
+
+ .footer-inner 
+  flex-wrap: wrap
+ .footer-left 
+  display: block
+ .footer-right
+  display: block
+
+@media  (max-width: 470px)
+ .header-nav-text 
+  display: none
+
+ .header-nav img 
+  display: block 
+
+ .header-logo 
+  margin-top: 10px 
+
+
+ .intro-titles
+  margin-top: 60px
+ .intro-title
+  font-size: 35px
+ .intro-sup
+  font-size: 14px 
+
+
+ .team-title 
+  &:after 
+   right: 40.5%
+  & span 
+   &:after
+    right: 37.2%
+
+
+
+ .music-filters a 
+  font-size: 15px
+
+ @media (max-width: 375px)
+   .music-filters a 
+    display: block
+    padding: 0
+    border: none
+    margin-bottom: 10px
+    &:last-child
+     padding: 0
+ .music-works
+  margin-top: 20px
